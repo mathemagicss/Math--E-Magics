@@ -4,14 +4,25 @@ document.addEventListener('DOMContentLoaded', () => {
     forms.forEach(form => {
         form.addEventListener('submit', event => {
             event.preventDefault();
-            const input = form.querySelector('input[type="text"]');
-            const answer = parseInt(input.value);
-            const correctAnswer = parseInt(input.dataset.correctAnswer);
+            const inputs = form.querySelectorAll('input[type="text"]');
+            let allCorrect = true;
 
-            if (answer === correctAnswer) {
-                alert('Correct!');
+            inputs.forEach(input => {
+                const answer = parseInt(input.value);
+                const correctAnswer = parseInt(input.dataset.correctAnswer);
+
+                if (answer === correctAnswer) {
+                    input.nextElementSibling.textContent = 'Correct!';
+                } else {
+                    input.nextElementSibling.textContent = 'Incorrect. Try again.';
+                    allCorrect = false;
+                }
+            });
+
+            if (allCorrect) {
+                alert('All answers are correct!');
             } else {
-                alert('Incorrect. Try again.');
+                alert('Some answers are incorrect. Please try again.');
             }
         });
     });
