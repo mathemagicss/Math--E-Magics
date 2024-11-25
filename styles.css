@@ -86,3 +86,49 @@ form button {
 form button:hover {
     background-color: var(--accent-color);
 }
+
+/* Add specific styles for new sections for grades 6-12 */
+#grade6, #grade7, #grade8, #grade9, #grade10, #grade11, #grade12 {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#grade6 h2, #grade7 h2, #grade8 h2, #grade9 h2, #grade10 h2, #grade11 h2, #grade12 h2 {
+    color: var(--primary-color);
+}
+
+#grade6 form, #grade7 form, #grade8 form, #grade9 form, #grade10 form, #grade11 form, #grade12 form {
+    background-color: #fff;
+    color: #000;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#grade6 form label, #grade7 form label, #grade8 form label, #grade9 form label, #grade10 form label, #grade11 form label, #grade12 form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#grade6 form input[type="text"], #grade7 form input[type="text"], #grade8 form input[type="text"], #grade9 form input[type="text"], #grade10 form input[type="text"], #grade11 form input[type="text"], #grade12 form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+}
+
+#grade6 form button, #grade7 form button, #grade8 form button, #grade9 form button, #grade10 form button, #grade11 form button, #grade12 form button {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#grade6 form button:hover, #grade7 form button:hover, #grade8 form button:hover, #grade9 form button:hover, #grade10 form button:hover, #grade11 form button:hover, #grade12 form button:hover {
+    background-color: var(--accent-color);
+}
