@@ -1,3 +1,53 @@
 <!doctype html>
 <html lang="en">
-<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math E-Magics</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Math E-Magics</h1>
+        <nav>
+            <ul>
+                <li><a href="#grade1">Grade 1</a></li>
+                <li><a href="#grade2">Grade 2</a></li>
+                <li><a href="#grade3">Grade 3</a></li>
+                <!-- Add more grades as needed -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="grade1">
+            <h2>Grade 1 Math Test</h2>
+            <form>
+                <label for="q1">1 + 1 = ?</label>
+                <input type="text" id="q1" name="q1">
+                <button type="button" onclick="checkAnswer('q1', 2)">Submit</button>
+            </form>
+        </section>
+        <section id="grade2">
+            <h2>Grade 2 Math Test</h2>
+            <form>
+                <label for="q2">2 + 2 = ?</label>
+                <input type="text" id="q2" name="q2">
+                <button type="button" onclick="checkAnswer('q2', 4)">Submit</button>
+            </form>
+        </section>
+        <section id="grade3">
+            <h2>Grade 3 Math Test</h2>
+            <form>
+                <label for="q3">3 + 3 = ?</label>
+                <input type="text" id="q3" name="q3">
+                <button type="button" onclick="checkAnswer('q3', 6)">Submit</button>
+            </form>
+        </section>
+        <!-- Add more sections for other grades as needed -->
+    </main>
+    <footer>
+        <p>&copy; 2024 Math E-Magics. All rights reserved.</p>
+    </footer>
+</body>
+</html>

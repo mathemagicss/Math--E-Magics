@@ -1,0 +1,88 @@
+/* Define the color palette of purple, green, and yellow */
+:root {
+    --primary-color: #6a0dad; /* Purple */
+    --secondary-color: #32cd32; /* Green */
+    --accent-color: #ffd700; /* Yellow */
+}
+
+/* Add styling for the website layout and sections */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--primary-color);
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    color: var(--accent-color);
+}
+
+/* Include styles for the math test questions and answers */
+form {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+}
+
+form button {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: var(--accent-color);
+}
