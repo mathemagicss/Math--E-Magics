@@ -18,6 +18,17 @@ header {
     background-color: var(--secondary-color);
     padding: 20px;
     text-align: center;
+    position: relative; /* P2157 */
+}
+
+header img {
+    position: absolute; /* P2157 */
+    top: 10px; /* P2157 */
+    left: 10px; /* P2157 */
+    width: 50px; /* P336b */
+    height: 50px; /* P336b */
+    padding: 5px; /* Pda93 */
+    margin: 5px; /* Pda93 */
 }
 
 header h1 {
