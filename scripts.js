@@ -38,3 +38,27 @@ function checkAnswer(questionId, correctAnswer) {
         alert('Incorrect. Try again.');
     }
 }
+
+// Update the checkAnswer function to handle the new questions
+function checkAnswer(questionId, correctAnswer) {
+    const input = document.getElementById(questionId);
+    const answer = parseInt(input.value);
+
+    if (answer === correctAnswer) {
+        alert('Correct!');
+    } else {
+        alert('Incorrect. Try again.');
+    }
+}
+
+// Ensure the correct answers for the new questions are checked
+function checkAnswer(questionId, correctAnswer) {
+    const input = document.getElementById(questionId);
+    const answer = parseInt(input.value);
+
+    if (answer === correctAnswer) {
+        alert('Correct!');
+    } else {
+        alert('Incorrect. Try again.');
+    }
+}
