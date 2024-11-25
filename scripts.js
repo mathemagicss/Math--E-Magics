@@ -20,9 +20,9 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             if (allCorrect) {
-                alert('All answers are correct!');
+                alert('All answers are correct! - Math-E-Magics');
             } else {
-                alert('Some answers are incorrect. Please try again.');
+                alert('Some answers are incorrect. Please try again. - Math-E-Magics');
             }
         });
     });
@@ -33,9 +33,9 @@ function checkAnswer(questionId, correctAnswer) {
     const answer = parseInt(input.value);
 
     if (answer === correctAnswer) {
-        alert('Correct!');
+        alert('Correct! - Math-E-Magics');
     } else {
-        alert('Incorrect. Try again.');
+        alert('Incorrect. Try again. - Math-E-Magics');
     }
 }
 
@@ -45,9 +45,9 @@ function checkAnswer(questionId, correctAnswer) {
     const answer = parseInt(input.value);
 
     if (answer === correctAnswer) {
-        alert('Correct!');
+        alert('Correct! - Math-E-Magics');
     } else {
-        alert('Incorrect. Try again.');
+        alert('Incorrect. Try again. - Math-E-Magics');
     }
 }
 
@@ -57,8 +57,8 @@ function checkAnswer(questionId, correctAnswer) {
     const answer = parseInt(input.value);
 
     if (answer === correctAnswer) {
-        alert('Correct!');
+        alert('Correct! - Math-E-Magics');
     } else {
-        alert('Incorrect. Try again.');
+        alert('Incorrect. Try again. - Math-E-Magics');
     }
 }

@@ -15,7 +15,7 @@ body {
 }
 
 header {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color); /* Updated to match the new theme */
     padding: 20px;
     text-align: center;
 }
