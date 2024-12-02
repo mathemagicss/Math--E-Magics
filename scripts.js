@@ -8,8 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
             let allCorrect = true;
 
             inputs.forEach(input => {
-                const answer = parseInt(input.value);
-                const correctAnswer = parseInt(input.dataset.correctAnswer);
+                const answer = input.value;
+                const correctAnswer = input.dataset.correctAnswer;
 
                 if (answer === correctAnswer) {
                     input.nextElementSibling.textContent = 'Correct!';
@@ -30,31 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function checkAnswer(questionId, correctAnswer) {
     const input = document.getElementById(questionId);
-    const answer = parseInt(input.value);
-
-    if (answer === correctAnswer) {
-        alert('Correct! - Math-E-Magics');
-    } else {
-        alert('Incorrect. Try again. - Math-E-Magics');
-    }
-}
-
-// Update the checkAnswer function to handle the new questions
-function checkAnswer(questionId, correctAnswer) {
-    const input = document.getElementById(questionId);
-    const answer = parseInt(input.value);
-
-    if (answer === correctAnswer) {
-        alert('Correct! - Math-E-Magics');
-    } else {
-        alert('Incorrect. Try again. - Math-E-Magics');
-    }
-}
-
-// Ensure the correct answers for the new questions are checked
-function checkAnswer(questionId, correctAnswer) {
-    const input = document.getElementById(questionId);
-    const answer = parseInt(input.value);
+    const answer = input.value;
 
     if (answer === correctAnswer) {
         alert('Correct! - Math-E-Magics');
